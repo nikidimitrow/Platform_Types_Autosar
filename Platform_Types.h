@@ -1,22 +1,12 @@
 #ifndef PLATFORM_TYPES_H
-#define PLATFORM_TYPES_H
+#define PLATFORM_TYPES_H 
 
-/**********************************************************************************************************************
- * INCLUDES
- *********************************************************************************************************************/
-
-/**********************************************************************************************************************
- *  GLOBAL CONSTANT MACROS
- *********************************************************************************************************************/
- 
-/* AUTOSAR Software Specification Document Version Information */
-
-/* AUTOSAR release 4.0 R3 */
+// which Autosar version is used (specific component can have different version)
 #define PLATFORM_AR_RELEASE_MAJOR_VERSION      (4u)
 #define PLATFORM_AR_RELEASE_MINOR_VERSION      (0u)
 #define PLATFORM_AR_RELEASE_REVISION_VERSION   (3u)
 
-/* Component Version Information */
+// component version  
 #define PLATFORM_SW_MAJOR_VERSION       (2u)
 #define PLATFORM_SW_MINOR_VERSION       (1u)
 #define PLATFORM_SW_PATCH_VERSION       (1u)
@@ -38,18 +28,8 @@
 #ifndef FALSE
   #define FALSE  0u
 #endif
-
-#define CPU_TYPE            CPU_TYPE_32
-#define CPU_BIT_ORDER       LSB_FIRST
-#define CPU_BYTE_ORDER      LOW_BYTE_FIRST
-
-/**********************************************************************************************************************
- *  GLOBAL FUNCTION MACROS
- *********************************************************************************************************************/
-
-/**********************************************************************************************************************
- *  GLOBAL DATA TYPES AND STRUCTURES
- *********************************************************************************************************************/
+ 
+ // Global data types
 typedef unsigned char       boolean;        /* for use with TRUE/FALSE        */
 
 typedef signed char         sint8;          /*        -128 .. +127            */
@@ -71,16 +51,6 @@ typedef signed long         sint32_least;   /* At least 31 bit + 1 bit sign   */
 typedef float               float32;
 typedef double              float64;
 
-/**********************************************************************************************************************
- *  GLOBAL DATA PROTOTYPES
- *********************************************************************************************************************/
-
-/**********************************************************************************************************************
- *  GLOBAL FUNCTION PROTOTYPES
- *********************************************************************************************************************/
-
+ 
 #endif /* PLATFORM_TYPES_H */
-
-/**********************************************************************************************************************
- *  END OF FILE: Platform_Types.h
- *********************************************************************************************************************/
+ 
